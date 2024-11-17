@@ -1,0 +1,34 @@
+{
+	"name": "Praktikum WAD",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"customizations": {
+		"vscode": {
+			"settings": {},
+			"extensions": [
+				"ecmel.vscode-html-css",
+				"dsznajder.es7-react-js-snippets"
+			]
+		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {}
+	},
+
+	"forwardPorts": [80,3306],
+	"portsAttributes": {
+		"80": {
+			"label": "Apache Web Server",
+			"onAutoForward": "notify"
+		},
+		"3306": {
+			"label": "MySQL",
+			"onAutoForward": "notify"
+		}
+		// "8080": {
+		// 	"label": "PHPMyAdmin",
+		// 	"onAutoForward": "notify"
+		// }
+	}
+}
