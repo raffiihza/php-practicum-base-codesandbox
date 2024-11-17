@@ -2,7 +2,7 @@
 	"name": "Praktikum WAD",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
-	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"workspaceFolder": "/workspaces/php-practicum",
 	"customizations": {
 		"vscode": {
 			"settings": {},
