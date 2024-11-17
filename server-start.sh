@@ -27,6 +27,9 @@ EOF"
 sudo chmod 755 phpmyadmin/config.inc.php > /dev/null 2>&1
 rm -rf /var/lock > /dev/null 2>&1
 mkdir -p /var/lock > /dev/null 2>&1
+mkdir -p modul5/storage > /dev/null 2>&1
+chmod -R 777 modul5/storage > /dev/null 2>&1
+chmod -R 777 modul5/database > /dev/null 2>&1
 cp apache-ports.conf /etc/apache2/ports.conf > /dev/null 2>&1
 sudo apache2ctl start > /dev/null 2>&1
 echo "Web server is running, run 'bash server-stop.sh' to stop"
