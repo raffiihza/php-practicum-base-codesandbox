@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Menjalankan server
+chmod -R 777 modul5/storage > /dev/null 2>&1
 sudo a2enmod proxy > /dev/null 2>&1
 sudo a2enmod proxy_http > /dev/null 2>&1
 sudo a2enmod rewrite > /dev/null 2>&1
